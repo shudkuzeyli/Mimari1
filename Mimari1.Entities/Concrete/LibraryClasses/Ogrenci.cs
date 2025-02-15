@@ -1,6 +1,6 @@
 ﻿namespace Mimari1.Entities.Concrete.LibraryClasses
 {
-	public class Ogrenci
+	public class Ogrenci : BaseClasses.BaseObject
 	{
 		public Ogrenci()
 		{
