@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mimari1.Core\Mimari1.Core.csproj" />
+    <ProjectReference Include="..\Mimari1.Entities\Mimari1.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

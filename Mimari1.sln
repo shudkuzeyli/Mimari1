@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Entities", "Mimari1.Entities\Mimari1.Entities.csproj", "{C46EA332-C691-4816-A402-88FE22AAD1B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Dal", "Mimari1.Dal\Mimari1.Dal.csproj", "{1A1344F1-75B2-4AD9-B168-A12F32DFF11A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Core", "Mimari1.Core\Mimari1.Core.csproj", "{0B9BFEA8-363C-4FF7-A4E7-47F7839A3D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Business", "Mimari1.Business\Mimari1.Business.csproj", "{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0B9BFEA8-363C-4FF7-A4E7-47F7839A3D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B9BFEA8-363C-4FF7-A4E7-47F7839A3D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B9BFEA8-363C-4FF7-A4E7-47F7839A3D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

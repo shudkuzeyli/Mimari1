@@ -19,19 +19,54 @@ namespace Mimari1.Core.DataAccess.EntityFramework
 			_dbContext = dbContext;
 		}
 
-		public void Add(TEntity model)
+		public bool Add(TEntity model)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				_dbContext.Add<TEntity>(model);
+
+				return true;
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
 		}
 
 		public void Delete(TEntity entity)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				_dbContext.Remove<TEntity>(entity);
+
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
 		}
 
 		public void DeleteAll(Expression<Func<TEntity, bool>> filter = null)
 		{
-			throw new NotImplementedException();
+			try
+			{
+				if (filter == null)
+				{
+					_dbContext.Set<TEntity>().RemoveRange(_dbContext.Set<TEntity>());
+				}
+				else
+				{
+					//filtre verilmişse
+					var entities = _dbContext.Set<TEntity>().Where(filter).ToList();
+
+					_dbContext.Set<TEntity>().RemoveRange(entities);
+				}
+
+			}
+			catch (Exception ex)
+			{
+				throw new Exception(ex.Message);
+			}
 		}
 
 		public TEntity GetById(int id)
@@ -53,12 +88,28 @@ namespace Mimari1.Core.DataAccess.EntityFramework
 
 		public int Save()
 		{
-			throw new NotImplementedException();
+			return _dbContext.SaveChanges();
 		}
 
 		public void Update(TEntity model)
 		{
-			throw new NotImplementedException();
+			_dbContext.Entry(model).State = EntityState.Modified;
+		}
+
+		public void Update(TEntity model, params Expression<Func<TEntity, object>>[] updatedProperties)
+		{
+
+			var dbEntity = _dbContext.Set<TEntity>().Find(model);
+			if (dbEntity == null)
+			{
+				throw new Exception("Entity not found");
+			}
+			var entry = _dbContext.Entry(dbEntity);
+
+			foreach (var property in updatedProperties)
+			{
+				entry.Property(property).IsModified = true;
+			}
 		}
 	}
 }

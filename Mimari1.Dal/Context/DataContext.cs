@@ -18,5 +18,7 @@ namespace Mimari1.Dal.Context
 		public DbSet<BolumOgrenci> BolumOgrenci { get; set; }
 		public	DbSet<Ogrenci> Ogrenci { get; set; }
 		public DbSet<Fakulte> Fakulte { get; set; }
+
+		public DbSet<Ogretmen> Ogretmen { get; set; }
 	}
 }
