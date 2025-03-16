@@ -111,5 +111,10 @@ namespace Mimari1.Core.DataAccess.EntityFramework
 				entry.Property(property).IsModified = true;
 			}
 		}
+
+		void IEntityRepository<TEntity>.Add(TEntity model)
+		{
+			_dbContext.Add<TEntity>(model);
+		}
 	}
 }

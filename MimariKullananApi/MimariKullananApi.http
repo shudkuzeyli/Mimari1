@@ -1,0 +1,6 @@
+@MimariKullananApi_HostAddress = http://localhost:5212
+
+GET {{MimariKullananApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

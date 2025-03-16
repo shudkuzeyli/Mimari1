@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Core", "Mimari1.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mimari1.Business", "Mimari1.Business\Mimari1.Business.csproj", "{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimariKullananApi", "MimariKullananApi\MimariKullananApi.csproj", "{156403BF-33FB-424B-B4F7-4F7F9DBF40D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CEFB5DB-CC06-4636-BD6A-55BFE74EFF87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156403BF-33FB-424B-B4F7-4F7F9DBF40D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156403BF-33FB-424B-B4F7-4F7F9DBF40D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156403BF-33FB-424B-B4F7-4F7F9DBF40D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156403BF-33FB-424B-B4F7-4F7F9DBF40D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

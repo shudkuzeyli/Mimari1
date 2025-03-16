@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mimari1.Core\Mimari1.Core.csproj" />
+    <ProjectReference Include="..\Mimari1.Dal\Mimari1.Dal.csproj" />
     <ProjectReference Include="..\Mimari1.Entities\Mimari1.Entities.csproj" />
   </ItemGroup>
 
